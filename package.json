@@ -1,0 +1,17 @@
+{
+  "name": "github-explorer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && node index.js",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build"
+  },
+  "author": "",
+  "license": "ISC"
+}
